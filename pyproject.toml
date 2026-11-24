@@ -1,0 +1,25 @@
+[project]
+name = "twilio-voice-assistant-claude-streaming"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Neel Viswanathan", email = "neelrvis@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "anthropic>=2.12.0",
+    "fastapi>=0.165.0",
+    "fastmcp>=4.2.3",
+    "pydantic>=2.14.4",
+    "requests>=2.34.2",
+    "twilio>=9.13.0",
+    "typing>=3.10.0.0",
+]
+
+[project.scripts]
+twilio-voice-assistant-claude-streaming = "twilio_voice_assistant_claude_streaming:main"
+
+[build-system]
+requires = ["uv_build>=0.13.9,<0.14.0"]
+build-backend = "uv_build"
